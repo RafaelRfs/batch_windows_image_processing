@@ -22,7 +22,6 @@ echo ===========================================================================
 echo ===================================================================================================
 
 
-
 pause > nul
 
 set years=2016 2017 2018 2019 2020 2021 2022 2023
@@ -39,12 +38,11 @@ echo [+] Starting program at  %dtb% ...
            if errorLevel 1 (
               echo 1 > nul
              ) else (
-			 if exist yourfilename (
+			 if exist %%z (
 			     echo 1 > null
 				 ) else (
 				 mkdir %%z
 				 )
-			 
              echo "[+]Found %%x"
              move "%%x" %%z
              )
